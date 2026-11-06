@@ -6,9 +6,14 @@
     <title>Fav Movies</title>
 </head>
 <body>
-    <h1>My Favorite Movies:</h1>
 
-    <ul>
+
+    <!-- Include partials -->
+<%- include('partials/header') %>
+<main>
+  <h2>Welcome!</h2>
+   <h1>My Favorite Movies:</h1>
+   <ul>
 
         <% movies.forEach(movie=> { %>
 
@@ -19,5 +24,10 @@
        
 
     </ul>
+</main>
+<%- include('partials/footer') %>
+   
+
+   
 </body>
 </html>

@@ -6,6 +6,11 @@
     <title>EJS Practice</title>
 </head>
 <body>
+
+    <!-- Include partials -->
+<%- include('partials/header') %>
+<main>
+  <h2>Welcome!</h2>
     <h1>EJS Practice</h1>
     <h2>Hello, <%= person.name %></h2>
     <h3>occupation, <%= person.occupation %></h3>
@@ -32,6 +37,11 @@
 <% } else { %>
   <p>your favorite color is not blue</p>
 <% } %>
+
+</main>
+<%- include('partials/footer') %>
+
+
 
 
 </body>
