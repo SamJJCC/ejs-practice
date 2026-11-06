@@ -21,5 +21,28 @@ app.get('/', (req, res) => {
     res.render('home', { person });
 
 });
+
+
+// Define a default "route" ('/')
+
+app.get('/friends', (req, res) => {
+
+
+    const friends = [ 'Mickey', 'Goofy', 'Minnie', 'Daisy' ];
+
+    res.render('friends', { friends });
+
+});
+
+
+app.get('/fav-movies', (req, res) => {
+
+
+    const movies = [  'Spider-Man Brand New Day','Avengers Endgame ', 'Creed', 'Hereditary' ];
+
+    res.render('movies', { movies });
+
+});
+
 // start the server on the designated port
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
