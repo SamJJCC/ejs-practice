@@ -10,5 +10,29 @@
     <h2>Hello, <%= person.name %></h2>
     <h3>occupation, <%= person.occupation %></h3>
     <h4>favorite colore, <%= person.favoriteColor %></h4>
+
+    <% if (person.occupation === 'Plumber') { %>
+  <p>You work with pipes!</p>
+<% } else { %>
+  <p>That's an interesting job!</p>
+<% } %>
+
+
+<% if (['plumber', 'organist',  
+
+    'bagpiper'].includes(person.occupation.toLowerCase())) { %>
+  <p>You work with pipes!</p>
+
+ <% } else { %>
+  <p>That's an interesting job!</p>
+<% } %>
+
+   <% if (person.favoriteColor === 'blue') { %>
+  <p>Your favorite color is blue!</p>
+<% } else { %>
+  <p>your favorite color is not blue</p>
+<% } %>
+
+
 </body>
 </html>
